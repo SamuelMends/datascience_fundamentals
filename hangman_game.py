@@ -1,3 +1,6 @@
 import random 
 
-palavras = ["banana", "uva"]
+palavras = ["banana", "uva", "manga", "melancia"]
+fruta = random.choice(palavras)
+print(fruta)
+
