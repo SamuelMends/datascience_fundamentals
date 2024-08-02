@@ -11,7 +11,7 @@ while cont < 6:
     print(fruta)
 
     spac = len(fruta)
-    print('_'* spac)
+    print('_' * spac)
     
     print(f'A palavra possui: {len(fruta)} letras')
     
