@@ -1,6 +1,12 @@
 import random 
 
+
+print("Bem vindo ao jogo da forca!")
+print("Advinhe a palabra abaixo: ")
+
+
 palavras = ["banana", "uva", "manga", "melancia"]
 fruta = random.choice(palavras)
-print(fruta)
+palavra = print(fruta)
+print(len(fruta))
 
