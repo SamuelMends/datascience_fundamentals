@@ -8,5 +8,6 @@ print("Advinhe a palabra abaixo: ")
 palavras = ["banana", "uva", "manga", "melancia"]
 fruta = random.choice(palavras)
 palavra = print(fruta)
-print(len(fruta))
+
+print(f'A palavra possui: {len(fruta)} letras')
 
