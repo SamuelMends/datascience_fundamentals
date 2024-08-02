@@ -6,14 +6,14 @@ fruta = random.choice(palavras)
 
 cont = 5
 
-while cont < 6:
-    print("Advinhe a palabra abaixo: ")
+while cont > 0:
+    print("\nAdvinhe a palabra abaixo: ")
     print(fruta)
 
     spac = len(fruta)
     print('_' * spac)
     
-    print(f'A palavra possui: {len(fruta)} letras')
+    print(f'A palavra possui: {len(fruta)} Letras')
     
     user = str(input('Digite uma letra: '))
     print(f"Você possui {cont} tentativas.")
