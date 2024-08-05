@@ -19,9 +19,9 @@ while chance > 0:
     print("\nChances restantes", cont)
     print("Letras erradas:", " ".join(letras_erradas))
     
-    user = str(input('Digite uma letra: ')).lower()
+    tentativa = str(input('Digite uma letra: ')).lower()
     print(f"Você possui {cont} tentativas.")
-    if user not in fruta:
+    if tentativa not in fruta:
         cont = cont - 1
     if cont == 0:
         break
