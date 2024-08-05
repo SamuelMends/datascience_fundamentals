@@ -39,6 +39,7 @@ while chance > 0:
             index += 1
     else:
         chance -= 1
+        letras_erradas.append(tentativa)
     
     
 
