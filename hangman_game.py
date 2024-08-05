@@ -1,18 +1,19 @@
 import random 
 
 print("Bem vindo ao jogo da forca!")
+print("\nAdvinhe a palabra abaixo: ")
 palavras = ["banana", "uva", "manga", "melancia"]
 fruta = random.choice(palavras)
 
-cont = 5
+
 
 letras_descobertas = ['_' for letra in palavras]
 
+chance = 5
 
+letras_erradas = []
 
-while cont > 0:
-    print("\nAdvinhe a palabra abaixo: ")
-    letras_erradas = []
+while chance > 0:
 
     print(" ".join(letras_descobertas))
     print("\nChances restantes", cont)
