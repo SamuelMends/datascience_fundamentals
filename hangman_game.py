@@ -29,6 +29,17 @@ while chance > 0:
     # Tentativa:
     tentativa = input("\nDigite uma letra: ").lower()
     
+    # Condicional:
+    if tentativa in fruta:
+        index = 0
+        
+        for letra in fruta:
+            if tentativa == letra:
+                letras_descobertas = letra
+            index += 1
+    else:
+        chance -= 1
+    
     
 
 print('Jogo encerrado, você não possui mais tentativas.')
