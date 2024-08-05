@@ -37,7 +37,7 @@ def game():
         
             for letra in fruta:
                 if tentativa == letra:
-                    letras_descobertas = letra
+                    letras_descobertas[index] = letra
                 index += 1
         else:
             chance -= 1
