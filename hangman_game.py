@@ -3,47 +3,53 @@ import random
 print("Bem vindo ao jogo da forca!")
 print("\nAdvinhe a palabra abaixo: ")
 
-# Listas de palavras:
-palavras = ["banana", "uva", "manga", "melancia"]
+def game():
 
-# Escolha aleatória das palavras:
-fruta = random.choice(palavras)
+    # Listas de palavras:
+    palavras = ["banana", "uva", "manga", "melancia"]
 
-# List Comprehension:
-letras_descobertas = ['_' for letra in palavras]
+    # Escolha aleatória das palavras:
+    fruta = random.choice(palavras)
 
-# Número de chances:
-chance = 6
+    # List Comprehension:
+    letras_descobertas = ['_' for letra in palavras]
 
-# Armazena letras erradas:
-letras_erradas = []
+    # Número de chances:
+    chance = 6
 
-# Loop enquanto número de chances for maior do que o zero:
-while chance > 0:
+    # Armazena letras erradas:
+    letras_erradas = []
+
+    # Loop enquanto número de chances for maior do que o zero:
+    while chance > 0:
     
-    # Print:
-    print(" ".join(letras_descobertas))
-    print("\nChances restantes", chance)
-    print("Letras erradas:", " ".join(letras_erradas))
+        # Print:
+        print(" ".join(letras_descobertas))
+        print("\nChances restantes", chance)
+        print("Letras erradas:", " ".join(letras_erradas))
     
-    # Tentativa:
-    tentativa = input("\nDigite uma letra: ").lower()
+        # Tentativa:
+        tentativa = input("\nDigite uma letra: ").lower()
     
-    # Condicional:
-    if tentativa in fruta:
-        index = 0
+        # Condicional:
+        if tentativa in fruta:
+            index = 0
         
-        for letra in fruta:
-            if tentativa == letra:
-                letras_descobertas = letra
-            index += 1
-    else:
-        chance -= 1
-        letras_erradas.append(tentativa)
+            for letra in fruta:
+                if tentativa == letra:
+                    letras_descobertas = letra
+                index += 1
+        else:
+            chance -= 1
+            letras_erradas.append(tentativa)
     
+        # Condicional
+        if "_" not in letras_descobertas:
+            print("\nVocê venceu, a palavra era:", fruta)
+            break
     
+game()
 
-print('Jogo encerrado, você não possui mais tentativas.')
     
     
 
