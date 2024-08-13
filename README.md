@@ -1,2 +1,2 @@
-# python_fundamentals
+# datascience_fundamentals
  
